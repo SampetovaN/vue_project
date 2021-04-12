@@ -213,7 +213,7 @@ hr {
 }
 
 button {
-  background-color: red;
+  background-color: transparent;
   background-image: none;
 }
 
