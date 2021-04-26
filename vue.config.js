@@ -1,5 +1,4 @@
 module.exports = {
-    publicPath: '/vue_project/',
     devServer: {
         overlay: {
             warnings: false,
