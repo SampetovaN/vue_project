@@ -4,7 +4,6 @@
       <Header />
       <main>
         <Intro />
-        <AccountList />
       </main>
     </div>
     <Footer />
@@ -14,9 +13,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
-import AccountList from "@/components/AccountList";
 
 export default {
-  components: { AccountList, Footer, Header, Intro }
+  components: { Footer, Header, Intro }
 };
 </script>

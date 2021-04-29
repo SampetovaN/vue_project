@@ -77,18 +77,7 @@
     }
   }
 }
-a.router-link-active {
-  cursor: default;
-  &:focus,
-  &:hover {
-    opacity: 1;
-  }
-  span {
-    &:after {
-      background: linear-gradient(270deg, rgba(24, 24, 24, 0) 0%, #737BE4 75%, #C667CD 87.5%, #FAB55B 100%);
-    }
-  }
-}
+
 
 
 

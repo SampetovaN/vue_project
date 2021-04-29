@@ -1,8 +1,12 @@
 <template>
   <footer class="content__footer footer">
     <ul class="footer__list">
-      <li v-for="href in hrefs" :key="href.id" class="footer__list-item">
-        <a v-bind:href="href.href">{{ href.text }}</a>
+      <li
+        v-for="href in FOOTER_LINKS"
+        :key="href.href"
+        class="footer__list-item"
+      >
+        <a :href="href.href">{{ href.text }}</a>
       </li>
     </ul>
     <p>
@@ -14,17 +18,11 @@
   </footer>
 </template>
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Footer",
-  data: function() {
-    return {
-      hrefs: [
-        { href: "#", text: "Правила возврата" },
-        { href: "#", text: "Поддержка" },
-        { href: "#", text: "Пользовательское соглашение" },
-        { href: "#", text: "YouTube" }
-      ]
-    };
+  computed: {
+    ...mapGetters(["FOOTER_LINKS"])
   }
 };
 </script>

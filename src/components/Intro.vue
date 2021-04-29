@@ -36,3 +36,24 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+.router-link-active {
+  cursor: default;
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+  span {
+    &:after {
+      background: linear-gradient(
+        270deg,
+        rgba(24, 24, 24, 0) 0%,
+        #737be4 75%,
+        #c667cd 87.5%,
+        #fab55b 100%
+      );
+    }
+  }
+}
+</style>

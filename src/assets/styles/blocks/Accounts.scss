@@ -1,0 +1,80 @@
+.accounts {
+  padding: 42px 5% 24px;
+  margin: 0 auto;
+  @media (max-width: $width-laptop) {
+    padding: 42px 0 24px;
+  }
+}
+.accounts__wrapper {
+  position: relative;
+  padding: 41px 30px 23px;
+  display: flex;
+  justify-content: space-between;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to left, #FAB55B, #C667CD, #737BE4);
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+
+  p {
+    @include text-sets(18px, 22px, 700);
+    color: white;
+    text-align: center;
+  }
+  @media (max-width: $width-desktop) {
+    flex-direction: column;
+  }
+
+}
+.accounts__description {
+  margin: 0 0 10px;
+}
+
+.accounts__list {
+  display: flex;
+  flex-direction: column;
+  @include list-refresh;
+  width: 56%;
+  @media (max-width: $width-desktop) {
+    width: auto;
+  }
+}
+
+.accounts__img-wrapper {
+  background-color: #0f0f0f;
+  height: 100%;
+  border-radius: 4px;
+  @media (max-width: $width-desktop) {
+    height: 350px;
+  }
+  img {
+    display: block;
+    transform: translateY(50%);
+    margin: auto;
+    width: 50%;
+    @media (max-width: $width-desktop) {
+      width: auto;
+    }
+  }
+}
+.accounts__fullImage {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $width-desktop) {
+    width: auto;
+  }
+}
+

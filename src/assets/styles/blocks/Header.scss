@@ -45,6 +45,10 @@
     @include set-hover(#ffffff);
   }
   &--logo {
+    cursor: pointer;
+    img {
+      @include set-opacity-button;
+    }
     @media (max-width: $width-desktop) {
       order: -1;
     }
